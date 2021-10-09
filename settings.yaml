@@ -1,0 +1,28 @@
+# 検索関連
+search:
+  # 検索するアカウント
+  account_ids:
+    - null
+  # 検索ワード
+  and_words:
+    - null
+  or_words:
+    - null
+  ignore_words:
+    - null
+# 送信可否
+sending:
+  # LINE Notify TOKENが必要
+  line: false
+  # Discord Webhook URLが必要
+  discord: false
+# MongoDB Atlas
+database:
+  database_name: bot
+  collection_name: twitter
+  # このプログラムの名前(一意の名前)
+  program_name: template
+# 実行関連
+control:
+  # 設定した値(分)毎に実行
+  interval: 5
