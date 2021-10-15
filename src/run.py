@@ -118,7 +118,7 @@ class Execution:
                     media_urls.append(url)
 
             # LINEに送信
-            if text and media_urls and settings.sending_to_line():
+            if text and settings.sending_to_line():
                 sending.to_line(text, media_urls)
 
             # Discordに送信
