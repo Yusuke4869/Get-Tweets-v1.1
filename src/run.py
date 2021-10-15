@@ -117,6 +117,8 @@ class Execution:
                     url = data["media_url_https"]
                     media_urls.append(url)
 
+            media_urls = list(dict.fromkeys(media_urls))
+
             # LINEに送信
             if text and settings.sending_to_line():
                 sending.to_line(text, media_urls)
